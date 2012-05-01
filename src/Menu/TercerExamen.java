@@ -7,11 +7,13 @@ import java.util.*;
 public class TercerExamen {
      LinkedList <Character>listaT = new <Character>LinkedList();//Declaro una lista de caracteres
     public static void main(String[] args) {
+         System.out.println("Introduce una frase cuando termines pon $");
         TercerExamen t = new TercerExamen();
         Brazo arbol=null;//Hago una variable de tipo Nodo con valor null
         Scanner lee = new Scanner(System.in);
         String entrada;
         do{
+           
             entrada = lee.next();
             if(!entrada.equals("*") && !entrada.equals("$")){//Checa que no sean iguales
                 for(int i=0; i < entrada.length();i++){//Recorre la entrada
@@ -72,6 +74,6 @@ public class TercerExamen {
     
 }
 /*
-HOLA
+JONHATAN
 $
  */
