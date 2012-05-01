@@ -9,44 +9,52 @@ public class Menu {
     
     public static void ejecutaPrograma(int numero){
     if(numero == 1){
-    //programa.main(String[] args).ArbolesBST;
         ArbolesBST arb= new ArbolesBST();
         arb.main(args);
         }else
         if(numero == 2){
-        //programa.main(String[] args).DistribucionCruzada;
          DistribucionCruzada distribucionCruzada= new DistribucionCruzada();
          distribucionCruzada.main(args);
         }else
         if(numero == 3){
-        //programa.main(String[] args).EjemploEratostenes;
+        EjemploEratostenes ejemploEratostenes= new EjemploEratostenes();
+        ejemploEratostenes.main(args);
         }else
         if(numero == 4){
-        //programa.main(String[] args).InsertionSort;
+        InsertionSort insertionSort= new InsertionSort();
+        insertionSort.main(args);
         }else
         if(numero == 5){
-        //programa.main(String[] args).JosephusProblemLinkedList;
+        JosephusProblemLinkedList josephusProblemLinkedList = new JosephusProblemLinkedList();
+        josephusProblemLinkedList.main(args);
         }else
         if(numero == 6){
-        //programa.main(String[] args).OrdenamientoPorCubetas;
+        OrdenamientoPorCubetas ordenamientoPorCubetas= new OrdenamientoPorCubetas();
+        ordenamientoPorCubetas.main(args);
         }else
         if(numero == 7){
-        //programa.main(String[] args).Pixeles;
+        Pixeles pixeles= new Pixeles();
+        pixeles.main(args);
         }else
         if(numero == 8){
-        //programa.main(String[] args).SelectionSort;
+        SelectionSort selectionSort=new SelectionSort();
+        selectionSort.main( args);
         }else
         if(numero == 9){
-        //programa.main(String[] args).ShellSort;
+            ShellSort shellSort= new ShellSort();
+            shellSort.main(args);
         }else
         if(numero == 10){
-        //programa.main(String[] args).TercerExamen;
+            TercerExamen tercerExamen= new TercerExamen();
+            tercerExamen.main(args);
         }else
         if(numero == 11){
-        //programa.main(String[] args).compresor1;
+            Compresor compresor=new Compresor();
+            compresor.main(args);
         }else
         if(numero == 12){
-        //programa.main(String[] args).coincidenciaParentesis;
+            ConcidenciaParentesis concidenciaParentesis= new ConcidenciaParentesis();
+            concidenciaParentesis.main(args);
         }
     }
     
@@ -62,6 +70,13 @@ public class Menu {
          
          while(numero != 0){
          ejecutaPrograma(numero);   
+         
+         System.out.println("\n\n\nINTRODUCE EL NUMERO PARA EJECUTAR EL PROGRAMA CORRESPONDIENTE,SI NO QUIERES EJECUTAR NINGUN PROGRAMA, introduce 0\n\t1) Arboles BST \n"
+                + "\t2) Distribucion Cruzada \n\t3) Ejemplo Eratostenes\n\t4) InsertionSort \n"
+                + "\t5) JosephusProblem\n\t6) Ordenamiento por Cubetas\n\t7) Pixeles \n\t8) SelectionSort \n\t"
+                + "9) ShellSort\n\t10) Tercer Examen\n\t11) compresor\n\t12) Coincidencia de Parentesis");
+    
+         
          numero = lee.nextInt();
          }
          
