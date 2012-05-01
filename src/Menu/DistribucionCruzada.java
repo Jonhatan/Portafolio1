@@ -6,7 +6,7 @@ package Menu;
  */
 import java.util.*;
 import java.util.regex.Pattern;
-public class DistribucionCruzada2 {
+public class DistribucionCruzada {
      static ArrayList lista = new ArrayList();
     static LinkedList valoresNoAgarrados = new LinkedList();
     

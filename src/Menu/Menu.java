@@ -5,16 +5,18 @@ package Menu;
  */
 import java.util.*;
 public class Menu {
-    Menu programa = new Menu();
+    static String [] args= new String[0];
     
     public static void ejecutaPrograma(int numero){
     if(numero == 1){
     //programa.main(String[] args).ArbolesBST;
         ArbolesBST arb= new ArbolesBST();
-        arb.main(new String[0]);
+        arb.main(args);
         }else
         if(numero == 2){
         //programa.main(String[] args).DistribucionCruzada;
+         DistribucionCruzada distribucionCruzada= new DistribucionCruzada();
+         distribucionCruzada.main(args);
         }else
         if(numero == 3){
         //programa.main(String[] args).EjemploEratostenes;
